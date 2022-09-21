@@ -97,6 +97,7 @@ const Home = (props) => {
             <HomeCarousel
               title= "Crypto wallet funds :"
               accountInfo = {`Wallet address: ${currentAccount.substring(0, 5)}...${currentAccount.slice(-4)}`}
+              moneyInfo = {`Balance: ${metaMaskBalance.substring(0, 5)}`}
               data={actualWalletFunds}
               renderItem={(d, i) => <MyFundCard {...d} index={i} />}
               breakpoints={breakpointsCarousel}
